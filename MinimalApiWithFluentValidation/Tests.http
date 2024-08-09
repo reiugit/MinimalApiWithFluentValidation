@@ -1,7 +1,6 @@
 @HostAddress = http://localhost:5035
 
-### 1.) Invalid data with
-# FluentValidation:
+### 1.) Invalid data with FluentValidation:
 
 POST {{HostAddress}}/api/products-v1/
 Accept: application/json
@@ -12,8 +11,7 @@ Content-Type: application/json
   "price": -10
 }
 
-### 2.) Invalid data with
-# ForEvolve.FluentValidation.AspNetCore.Http:
+### 2.) ForEvolve.FluentValidation:
 
 POST {{HostAddress}}/api/products-v2/
 Accept: application/json
@@ -24,8 +22,7 @@ Content-Type: application/json
   "price": -10
 }
 
-### 3.) Invalid data with
-# SharpGrip.FluentValidation.AutoValidation:
+### 3.) SharpGrip.FluentValidation:
 
 POST {{HostAddress}}/api/products-v3/
 Accept: application/json
@@ -36,7 +33,7 @@ Content-Type: application/json
   "price": -10
 }
 
-### 4.) Valid data:
+### 4.) Valid data with FluentValidation:
 
 POST {{HostAddress}}/api/products-V1/
 Accept: application/json
