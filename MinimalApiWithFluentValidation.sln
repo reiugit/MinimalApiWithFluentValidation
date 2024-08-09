@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiWithFluentValidation", "MinimalApiWithFluentValidation\MinimalApiWithFluentValidation.csproj", "{F8BD8E2E-EC47-45F6-A0E8-AAA0749A375A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8BD8E2E-EC47-45F6-A0E8-AAA0749A375A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8BD8E2E-EC47-45F6-A0E8-AAA0749A375A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8BD8E2E-EC47-45F6-A0E8-AAA0749A375A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8BD8E2E-EC47-45F6-A0E8-AAA0749A375A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF8D6794-D342-4D40-BB1F-AAB1EE38906E}
+	EndGlobalSection
+EndGlobal

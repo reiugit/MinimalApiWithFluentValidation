@@ -1,0 +1,24 @@
+@HostAddress = http://localhost:5035
+
+### 1.) With invalid data:
+
+POST {{HostAddress}}/api/products/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "",
+  "price": -10
+}
+
+### 2.) With valid data:
+
+POST {{HostAddress}}/api/products/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Product 1",
+  "price": 12.35
+}
+
