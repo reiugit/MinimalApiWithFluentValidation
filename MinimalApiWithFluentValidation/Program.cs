@@ -10,6 +10,7 @@ builder.AddFluentValidationEndpointFilter();
 
 var app = builder.Build();
 
+// 1.) FluentValidation
 app.MapPost("/api/products-v1", (ProductRequest productRequest, IValidator<ProductRequest> validator) =>
 {
     var result = validator.Validate(productRequest);
@@ -22,14 +23,15 @@ app.MapPost("/api/products-v1", (ProductRequest productRequest, IValidator<Produ
     return Results.ValidationProblem(result.ToDictionary());
 });
 
-app.MapPost("/api/products-v2", (ProductRequest productRequest, IValidator<ProductRequest> validator) =>
+// 2.) ForEvolve.FluentValidation
+app.MapPost("/api/products-v2", (ProductRequest productRequest) =>
 {
     return Results.Created($"/api/products/1", productRequest.ToResponse());
 })
 .AddFluentValidationFilter();
 
-
-app.MapPost("/api/products-v3", (ProductRequest productRequest, IValidator<ProductRequest> validator) =>
+// 3.) SharpGrip.FluentValidation
+app.MapPost("/api/products-v3", (ProductRequest productRequest) =>
 {
     return Results.Created($"/api/products/1", productRequest.ToResponse());
 })
